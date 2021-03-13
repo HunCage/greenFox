@@ -1,0 +1,28 @@
+main {
+  margin: 25px 50px;
+}
+
+h1 {
+  color: tomato;
+}
+
+h2 {
+  color: darkviolet;
+}
+
+p {
+  width: 500px;
+}
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: upper-roman;
+  color: magenta;
+}
+
+ol li:last-child {
+  color: #000;
+  text-decoration: underline;
+}

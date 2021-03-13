@@ -1,0 +1,28 @@
+main {
+  margin: 25px;
+  width: 192px;
+  height: 304px;
+  text-align: center;
+}
+
+div {
+  width: 192px;
+  height: 152px;
+  border: 8px solid #4285f4;
+  margin: 15px;
+}
+p {
+  color: #fff;
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 24px;
+  padding: 20px 36px;
+  margin: -1px;
+}
+
+.red {
+  background: #E67676;
+}
+
+.lightblue {
+    background: #A9E6E6;
+}

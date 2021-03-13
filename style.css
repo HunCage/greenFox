@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+    background: linear-gradient(to right, green, lime)
+}
+
+body {
+    margin: 5% 20%;
+    border: 3px dashed orange;
+}
+
+main {
+    width: 35vw;
+    margin: 0 auto;
+}
+
+main h1,
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem auto;
+    text-shadow: 3px 3px 5px orange;
+}
+
+main h2 {
+    font-size: 2rem;
+}
+
+.links {
+    width: 60%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    padding: .3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    color: orange;
+    text-shadow: 1px 1px #222;
+}
+
+a:last-child {
+    margin-bottom: 2rem;
+}
+
+a:hover {
+    color: tomato;
+}
+
+a:visited {
+    color: rgb(31, 105, 31);
+    text-shadow: 1px 1px orange;
+}
+
+hr {
+    color: #222;
+    height: 3px;
+    border: none;
+    background: darkslategray;
+}
