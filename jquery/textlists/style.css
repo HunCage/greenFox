@@ -1,4 +1,25 @@
+.back {
+    position: absolute;
+}
+
+i {
+    color: black;
+    font-size: 24px;
+    margin-left: 25px;
+}
+
+i:hover {
+    color: green;
+    transform: scale(1.1);
+}
+
+a {
+    padding: 3px;
+}
+
 main {
+    top: 70px;
+    position: relative;
     margin: 25px 50px;
 }
 
@@ -24,7 +45,6 @@ ul {
 ol {
     list-style-type: upper-roman;
     color: magenta;
-    text-decoration: underline;
 }
 
 ol li:last-child {

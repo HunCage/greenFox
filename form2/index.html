@@ -3,15 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Form2</title>
+    <title>Complicated form</title>
     <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
+    <header class="back">
+        <a href="/"><i class="fas fa-arrow-alt-circle-left"> back</i></a>
+    </header>
+
     <main>
-        <form action="">
+        <form>
 
             <fieldset>
                 <legend>Interesting application form &#128580;</legend>
@@ -42,8 +45,8 @@
 
                     <div>
                         <input type="checkbox" class="other" id="other" name="other" />
-                        <label for="other">Other</label>
-                        <input type="text" class="other" name="other">
+                        <label for="other" id="otherx">Other</label>
+                        <input type="text" class="other" id="other1" name="other" autofocus>
                     </div>
                 </fieldset>
 
@@ -77,13 +80,23 @@
                     <textarea cols="40" rows="10" id="text"></textarea>
                 </fieldset>
 
-
                 <input type="submit" value="Submit">
             </fieldset>
         </form>
     </main>
-    <!-- partial -->
+    <script>
+        const box = document.querySelector('#other');
+        const inp = document.querySelector('#other1');
 
+        box.addEventListener('change', (e) => {
+            if (e.currentTarget.checked) {
+                inp.style.visibility = 'visible';
+                inp.focus();
+            } else {
+                inp.style.visibility = 'hidden';
+            }
+        });
+    </script>
 </body>
 
 </html>
